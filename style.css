@@ -1,0 +1,241 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    /* heading */
+    /* font-family: 'Poppins', sans-serif; */
+
+    /* body */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--violet);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    margin: 4px;
+}
+
+.bg-desktop{
+    position: relative;
+    width: 92%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.mockup{
+    width: 55%;
+    margin-right: 30px;
+}
+
+.text{
+    width: 45%;
+    padding: 10px;
+}
+
+.text h1{
+    width: 70%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.text a{
+    padding: 10px 55px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--violet);
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+ion-icon {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 7px;
+    border: 1px solid white;
+    color: white;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        overflow: unset;
+    }
+    
+    .bg-mobile{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+    
+    .bg-desktop{
+        display: none;
+    }
+    
+    main{
+        position: absolute;
+        display: flex;
+        margin: 20px 30px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .logo{
+        width: 150px;
+        margin-bottom: 30px;
+    }
+     
+    .mockup{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .content{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .text{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .text h1{
+        width: 100%;
+    }
+    
+    .text p{
+        padding-bottom: 10px;
+    }
+    
+    .text a{
+        padding: 8px 55px;
+        font-size: 12px;
+    }
+
+    
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+    
+    ion-icon {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        overflow: unset;
+    }
+    
+    .bg-desktop{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+    
+    main{
+        position: absolute;
+        display: flex;
+        margin: 20px 30px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .logo{
+        width: 150px;
+        margin-bottom: 30px;
+    }
+     
+    .mockup{
+        width: 100%;
+    }
+    
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text h1{
+        width: 100%;
+    }
+    
+    .text p{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .text a{
+        padding: 8px 55px;
+        font-size: 12px;
+    }
+
+    .content{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    ion-icon {
+        margin: 5px;
+        padding: 5px;
+    }
+}
